@@ -1,0 +1,38 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+    <item
+            android:id="@+id/action_Listview"
+            android:orderInCategory="100"
+            android:title="listview"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_Gridview"
+            android:orderInCategory="100"
+            android:title="gridView"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_hor_GridView"
+            android:orderInCategory="100"
+            android:title="hor_GridView"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_pubu"
+            android:orderInCategory="100"
+            android:title="pubuliu"
+            app:showAsAction="never" />
+    <item
+            android:id="@+id/action_add"
+            android:orderInCategory="100"
+            android:icon="@drawable/btn_cancel_normal_shape"
+            android:title="add"
+            app:showAsAction="always" />
+    <item
+            android:id="@+id/action_delete"
+            android:orderInCategory="100"
+            android:icon="@drawable/btn_cancel_normal_shape"
+            android:title="delete"
+            app:showAsAction="always" />
+</menu>
