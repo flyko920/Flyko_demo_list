@@ -35,7 +35,6 @@ public class TestRecylcerViewActivity  extends AppCompatActivity{
     private void initdate() {
         datas = new ArrayList<String>();
         for (int i = 'A'; i < 'z'; i++) {
-
             datas.add((char) i + "");
         }
 
@@ -43,7 +42,6 @@ public class TestRecylcerViewActivity  extends AppCompatActivity{
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_main, menu);
         return true;
     }
@@ -61,22 +59,18 @@ public class TestRecylcerViewActivity  extends AppCompatActivity{
                 break;
             case R.id.action_Listview:
                 LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
-
                 recyclerview.setLayoutManager(linearLayoutManager);
                 break;
-
             case R.id.action_hor_GridView:
                 GridLayoutManager hor_gridLayoutManager = new GridLayoutManager(this, 4, GridLayoutManager.HORIZONTAL, false);
                 recyclerview.setLayoutManager(hor_gridLayoutManager);
                 break;
             case R.id.action_pubu:
                 break;
-
             case R.id.action_add:
                 recyclerViewAdapter.add(1);
                 break;
             case R.id.action_delete:
-
                 recyclerViewAdapter.delete(1);
                 break;
         }
@@ -88,7 +82,6 @@ public class TestRecylcerViewActivity  extends AppCompatActivity{
         recyclerview = (RecyclerView) findViewById(R.id.recyclerview);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(TestRecylcerViewActivity.this, LinearLayoutManager.VERTICAL, false);
         recyclerview.setLayoutManager(layoutManager);
-//        recyclerview.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL_LIST));
 
         recyclerview.setItemAnimator(new DefaultItemAnimator());
         recyclerViewAdapter = new RecyclerViewAdapter(datas, this);
@@ -101,11 +94,9 @@ public class TestRecylcerViewActivity  extends AppCompatActivity{
 
             @Override
             public void onItemLongClick(View view, int Position) {
-
                 Toast.makeText(TestRecylcerViewActivity.this, "ItemLongClick" + Position, Toast.LENGTH_SHORT).show();
             }
         });
-
     }
 
 
