@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.flyko.demo.list.SideslipView.DrayLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout
+            android:background="#aaff00ff"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <LinearLayout
+            android:background="#aaffff66"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    <LinearLayout
+            android:background="#aaff0033"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</com.flyko.demo.list.SideslipView.DrayLayout>
