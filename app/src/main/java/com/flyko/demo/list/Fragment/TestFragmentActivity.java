@@ -13,8 +13,8 @@ import java.util.List;
  * Created by flykozhang on 16-2-4.
  */
 public class TestFragmentActivity extends FragmentActivity implements TwoFragment.FragmentTwoBtnClickListener, OneFragment.FragmentOneBtnClickListener {
-    private static final int FRAGMENT_ID_ONE = 0;
-    private static final int FRAGMENT_ID_TWO = 1;
+    private static final int FRAGMENT_ID_ONE = 1;
+    private static final int FRAGMENT_ID_TWO = 2;
 
     @Override
     public void btuClick(int FRAGMENT_ID, int btu_id) {
